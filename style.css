@@ -39,7 +39,7 @@ h2{
   height: 200px;
   object-fit: cover;
 
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
   transition: transform 0.3s ease;
@@ -48,4 +48,16 @@ h2{
 /* efeito hover */
 .galeria img:hover {
   transform: scale(1.2); /* diminui um pouco pra não quebrar layout */
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+  color: #ff4d6d; /* rosa 🍓 */
+  transform: scale(1.1);
 }

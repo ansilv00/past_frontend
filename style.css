@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  background: #000746;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1{ 
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* container geral */
+.container-geral {
+  text-align: center;
+}
+
+/* título */
+h1 {
+  margin-bottom: 20px;
+}
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+}
+
+/* galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 15px;
+}
+
+/* imagens */
+.galeria img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s ease;
+}
+
+/* efeito hover */
+.galeria img:hover {
+  transform: scale(1.2); /* diminui um pouco pra não quebrar layout */
+}
